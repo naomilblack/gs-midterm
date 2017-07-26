@@ -17,11 +17,13 @@ body {
   text-align: center;
   height: 66px;
   padding: 0;
-  margin: 0;
+  margin: auto;
+  width: 100%;
+  overflow: auto;
 }
 .nav li {
   font-family: 'Space Mono', monospace;
-  font-size: 2.1em;
+  font-size: 1.5em;
   line-height: 60px;
   height: 65px;
   width: 33%;
@@ -31,11 +33,14 @@ body {
   text-decoration: none;
   color: #fff;
   display: block;
- }
+}
 
 .nav li {
-    display: inline-block;
-    margin-right: -4px;
+    float: left;
+}
+
+.row {
+	margin-top: 30px;
 }
 
 #seats {
@@ -84,3 +89,19 @@ background-color: red;
 .glyphicon-print{
 
 }
+
+.form-control
+
+
+#final-form {
+	background-color: white;
+	width: 50%;
+	margin:0px auto;
+}
+
+#final-form input {
+
+	margin:5px;
+	width: 60%;
+}
+
