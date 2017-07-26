@@ -53,11 +53,16 @@ body {
 	font-size: 1.2em;
 
 }
-
+.seat-container {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-around;
+}
 .seat {
 	width: 16.7%;
 	height:50px;
 	background-color: gray;
+
 }
 .available {
 	background-color: snow;
