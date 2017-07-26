@@ -51,6 +51,7 @@ body {
 	text-align: center;
 	margin:0px auto;
 	font-size: 1.2em;
+	margin-top: 10px;
 
 }
 .seat-container {
@@ -59,9 +60,10 @@ body {
 	justify-content: space-around;
 }
 .seat {
-	width: 16.7%;
+	width: 14.7%;
 	height:50px;
 	background-color: gray;
+	margin: 10px auto;
 
 }
 .available {
