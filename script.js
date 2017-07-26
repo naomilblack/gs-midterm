@@ -6,15 +6,24 @@ var reservations =[
 var selectedSeats = [];
 var reservedSeats = [];
 
-
-
 $(".available").click(selectSeat);
-
+$(".selected").click(removeSeat);
 
 function selectSeat () {
 	$(this).attr("class", "seat selected");
 	var number = $(this).find("p").text();
 	selectedSeats.push(number);
 
-	console.log(number, selectedSeats, $(this).find("p") );
+	$(this).unbind("click", selectSeat);
+  	$(this).bind("click",removeSeat);
+}
+
+function removeSeat () {
+	$(this).attr("class", "seat available");
+	var number = $(this).find("p").text();
+	var position= selectedSeats.indexOf(number);
+  	selectedSeats.splice(position);
+  
+  	$(this).bind("click", selectSeat);
+  	$(this).unbind("click",removeSeat);
 }
