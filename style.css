@@ -39,6 +39,10 @@ body {
     float: left;
 }
 
+.row {
+	margin-top: 30px;
+}
+
 #seats {
 	width: 70%;
 	border:1px solid black;
@@ -54,11 +58,16 @@ body {
 	font-size: 1.2em;
 
 }
-
+.seat-container {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-around;
+}
 .seat {
 	width: 16.7%;
 	height:50px;
 	background-color: gray;
+
 }
 .available {
 	background-color: snow;
@@ -82,4 +91,15 @@ background-color: red;
 .form-control
 
 
+#final-form {
+	background-color: white;
+	width: 50%;
+	margin:0px auto;
+}
+
+#final-form input {
+
+	margin:5px;
+	width: 60%;
+}
 
