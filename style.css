@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
@@ -38,3 +39,26 @@ body {
     display: inline-block;
     margin-right: -4px;
 }
+
+#seats {
+	width: 70%;
+	border:1px solid black;
+}
+
+#screen {
+	width:500px;
+	height:20px;
+	color:white;
+	background-color: black;
+	text-align: center;
+	margin:0px auto;
+	font-size: 1.2em;
+
+}
+
+.seat {
+	width: 16.7%;
+	height:50px;
+	background-color: gray;
+}
+
