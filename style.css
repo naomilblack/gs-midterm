@@ -38,6 +38,10 @@ body {
     margin-right: -4px;
 }
 
+.row {
+	margin-top: 30px;
+}
+
 #seats {
 	width: 70%;
 	border:1px solid black;
@@ -76,4 +80,16 @@ background-color: red;
 
 .glyphicon-print{
 
+}
+
+#final-form {
+	background-color: white;
+	width: 50%;
+	margin:0px auto;
+}
+
+#final-form input {
+
+	margin:5px;
+	width: 60%;
 }
