@@ -62,7 +62,9 @@ function finalizeRes() { // Finalize the reservation
 	var resName = $("#final-form").find("[name ='name']").val(); // Get form values and add them to an object
 	var resEmail = $("#final-form").find("[name ='email']").val();
 
-	if (resName.length != 0 && resName.length != 0) {
+	if (resName.length !== 0 && resName.length !== 0) {
+
+		console.log("You dun goofed.");
 		var reservation = {name: resName, email: resEmail, seats: selectedSeats};
 		reservations.push(reservation);
 
@@ -77,9 +79,6 @@ function finalizeRes() { // Finalize the reservation
 	} else {
 		$("#error").text("You must enter a name AND email to continue!!");
 	}
-
-	$(".selected").unbind("click", removeSeat).attr("class", "seat reserved");// Change class to rserved, remove event listeners.
-	hideForm();
 }
 
 
