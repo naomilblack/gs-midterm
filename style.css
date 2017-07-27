@@ -1,23 +1,31 @@
-<<<<<<< HEAD
-/*@import url('https://fonts.googleapis.com/css?family=Great+Vibes');*/
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
-=======
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
-@import url('https://fonts.googleapis.com/css?family=Bellefair');
->>>>>>> acdb3d3379e572dd3c23ee6b534ffdc6248b8673
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Sans|Cormorant');
 
 html, body {
 	height: 100%;
 }
 
 body {
-	font-family: 'Great Vibes', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 	background: url(Images/curtain.png) no-repeat, center, center, fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+  opacity: 0.7;
 }
+
+.content::after {
+  content: "";
+  background: url(Images/curtain.png);
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
 
 h1 {
 	text-align: center;
@@ -29,8 +37,6 @@ h2 {
 	color: white;
 }
 
-/*not sure if you want to center the form or not so i left its header alone*/
-
 h3 {
 	text-align: center;
 	font-size: 2.2em;
@@ -41,21 +47,20 @@ h3 {
   list-style: none;
   background-color: #B11407;
   text-align: center;
-  height: 50px;
+  height: 60px;
   padding: 0;
   margin: 0;
+  border-radius: 5px;
 }
 .nav li {
   font-family: 'Bellefair', serif;
   font-size: 1.2em;
   line-height: 44px;
   height: 50px;
-  font-family: 'Space Mono', monospace;
-  font-size: 2.1em;
-  line-height: 60px;
-  height: 65px;
+  height: 60px;
   width: 33%;
   overflow: auto;
+  border-radius: 5px;
 }
 
 .nav a {
@@ -79,15 +84,24 @@ h3 {
 
 }
 
+<<<<<<< HEAD
 
 /*let me know if you guys want to change the on hover image, i thought it was cute*/
 
 .row {
 	margin-top: 30px;
+=======
+.row {
+	/*margin: 30px 0px;*/
+>>>>>>> a377c74ed5c0d1367c9a2cf0ba31628139da4864
 }
 
 .container {
 	text-align: center;
+<<<<<<< HEAD
+=======
+	display: none;
+>>>>>>> a377c74ed5c0d1367c9a2cf0ba31628139da4864
 }
 
 #seats {
@@ -98,8 +112,8 @@ h3 {
 }
 
 #screen {
-	width:auto;
-	height:20px;
+	width:95%;
+	height:25px;
 	color:white;
 	background-color: black;
 	text-align: center;
@@ -125,7 +139,6 @@ h3 {
 	height:50px;
 	/*background-color: gray;*/
 	margin: 20px auto;
-
 }
 
 .available {
@@ -137,6 +150,7 @@ h3 {
 }
 
 .reserved {
+<<<<<<< HEAD
 color: red;
 }
 
@@ -152,6 +166,18 @@ position:relative;
 
 .form-control {
 
+=======
+	color: red;
+}
+
+.glyphicon {
+	font-size: 45px;
+}
+
+.glyphicon:hover {
+	transform: scale(1.10);
+	cursor: crosshair;
+>>>>>>> a377c74ed5c0d1367c9a2cf0ba31628139da4864
 }
 
 #start-form {
@@ -164,11 +190,20 @@ position:relative;
 }
 
 #final-form {
-	background-color: white;
+	position: relative;
+	background-color: black;
 	width: 50%;
+	font-family: 'Great Vibes', cursive;
 	display: block;
 	margin:0px auto;
 	padding: 10px;
+}
+
+#close {
+	display: block;
+	position: absolute;
+	right: -10px;
+	top: -10px;
 }
 
 #final-form label {
@@ -180,3 +215,5 @@ position:relative;
 	display: block;
 	margin:0px auto;
 }
+
+
