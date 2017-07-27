@@ -62,3 +62,7 @@ function finalizeRes() { // Finalize the reservation
 	$(".selected").unbind("click", removeSeat).attr("class", "seat reserved");// Change class to rserved, remove event listeners.
 	hideForm();
 }
+
+$("#screen").on('click', function() {
+		$(this).next('.img').slideToggle();
+});
