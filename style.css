@@ -82,13 +82,13 @@ h3 {
 
 /*let me know if you guys want to change the on hover image, i thought it was cute*/
 
-/*.row {
+.row {
 	margin-top: 30px;
-	justify-content: center;
+}
 
 .container {
 	text-align: center;
-}*/
+}
 
 #seats {
 	width: 70%;
@@ -128,26 +128,26 @@ h3 {
 
 }
 
-.available, glyphicon {
+.available {
 	color: snow;
 }
 
-.selected, glyphicon {
+.selected {
 	color: orange;
 }
 
-.reserved, glyphicon {
+.reserved {
 color: red;
 }
 
 .glyphicon {
 font-size: 45px;
+position:relative;
 }
 
-.glyphicon:hover {
-	font-size: 60px;
+.available:hover {
+	transform:scale(1.1);
 	cursor: crosshair;
-
 }
 
 .form-control {
