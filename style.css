@@ -17,13 +17,11 @@ body {
   text-align: center;
   height: 66px;
   padding: 0;
-  margin: auto;
-  width: 100%;
-  overflow: auto;
+  margin: 0;
 }
 .nav li {
   font-family: 'Space Mono', monospace;
-  font-size: 1.5em;
+  font-size: 2.1em;
   line-height: 60px;
   height: 65px;
   width: 33%;
@@ -33,14 +31,15 @@ body {
   text-decoration: none;
   color: #fff;
   display: block;
-}
+ }
 
 .nav li {
-    float: left;
+    display: inline-block;
+    margin-right: -4px;
 }
 
-.row {
-	margin-top: 30px;
+.container{
+	text-align: center;
 }
 
 #seats {
@@ -57,51 +56,43 @@ body {
 	margin:0px auto;
 	font-size: 1.2em;
 	margin-top: 10px;
-
 }
+
 .seat-container {
 	display:flex;
 	flex-flow:row wrap;
 	justify-content: space-around;
+	background-color: black;
+	margin:10px;
+
 }
+
 .seat {
 	width: 14.7%;
 	height:50px;
-	background-color: gray;
-	margin: 10px auto;
-
-}
-.available {
-	background-color: snow;
+	/*background-color: gray;*/
+	margin: 20px auto;
 
 }
 
-.selected {
-	background-color: orange;
-
+.available, glyphicon {
+	color: snow;
 }
 
-.reserved {
-background-color: red;
-
+.selected, glyphicon {
+	color: orange;
 }
 
-.glyphicon-print{
-
+.reserved, glyphicon {
+color: red;
 }
 
-.form-control
-
-
-#final-form {
-	background-color: white;
-	width: 50%;
-	margin:0px auto;
+.glyphicon {
+font-size: 45px;
 }
 
-#final-form input {
+.glyphicon:hover {
+	font-size: 60px;
+	cursor: crosshair;
 
-	margin:5px;
-	width: 60%;
 }
-
