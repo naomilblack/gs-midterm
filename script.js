@@ -13,12 +13,17 @@ $("#start-form").click(showForm);
 $(".form-close").click(hideForm);
 
 function selectSeat() { // Select an available seat.
+	if (selectedSeats.length === 0) { // If a seat is already selected, do nothing.
+  		$("#start-form").show();
+	}
+
 	$(this).attr("class", "seat selected");
 	var number = $(this).find("p").text();
 	selectedSeats.push(number);
 
 	$(this).unbind("click", selectSeat);
   	$(this).bind("click",removeSeat);
+
 }
 
 function removeSeat() { // Remove a selected seat.
@@ -29,9 +34,15 @@ function removeSeat() { // Remove a selected seat.
   
   	$(this).bind("click", selectSeat);//Remove and add appropriate event listeners.
   	$(this).unbind("click",removeSeat);
+
+  	if (selectedSeats.length === 0) {
+  		$("#start-form").hide();
+	} 
 }
 
 function showForm() { // Hide seat display and show the reservation form.
+
+	$("#selections").text('');
 
 	selectedSeats.forEach(function (seat) {
 		$("#selections").append(seat + " ");
@@ -50,15 +61,21 @@ function finalizeRes() { // Finalize the reservation
 
 	var resName = $("#final-form").find("[name ='name']").val(); // Get form values and add them to an object
 	var resEmail = $("#final-form").find("[name ='email']").val();
-	var reservation = {name: resName, email: resEmail, seats: selectedSeats};
-	reservations.push(reservation);
 
-	selectedSeats.forEach(function (seat) { //Push each selected seat into reservedSeats and clear the selectedSeats array.
-		reservedSeats.push(seat);
-	});
-	console.log(reservations, reservedSeats);
-	selectedSeats = [];
+	if (resName.length != 0 && resName.length != 0) {
+		var reservation = {name: resName, email: resEmail, seats: selectedSeats};
+		reservations.push(reservation);
 
-	$(".selected").unbind("click", removeSeat).attr("class", "seat reserved");// Change class to rserved, remove event listeners.
-	hideForm();
+		selectedSeats.forEach(function (seat) { //Push each selected seat into reservedSeats and clear the selectedSeats array.
+			reservedSeats.push(seat);
+		});
+		console.log(reservations);
+		selectedSeats = [];
+
+		$(".selected").unbind("click", removeSeat).attr("class", "seat reserved");// Change class to rserved, remove event listeners.
+		hideForm();
+	} else {
+		$("#error").text("You must enter a name AND email to continue!!");
+	}
+
 }
