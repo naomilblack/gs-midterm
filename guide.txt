@@ -3,9 +3,9 @@
 
 - Navbar: Header with Logo and the Name of the fake theater.
 
-- Movie Title and Instructions: H1/2/3 with the title of the movie (Scorcher VI: Global Meltdown) and the instructions to choose a seat. 
+- Movie Title and Instructions: H1/2/3 with the title of the movie (Scorcher VI: Global Meltdown) and the instructions to choose a seat.
 
-- Theater Seats Selection Box: Main content box that hold the "Screen" element and the individual seats. The rows will contain the same amount of seats, no matter the screen 
+- Theater Seats Selection Box: Main content box that hold the "Screen" element and the individual seats. The rows will contain the same amount of seats, no matter the screen
   size.
 
 - Trailers: Div below the seats selection box that allows the user to see a trailer for the selected movie or other movies.
@@ -25,10 +25,3 @@ CSS
 
 JS/Jquery
 ------
-
-
-
-
-
-
-
