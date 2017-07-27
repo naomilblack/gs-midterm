@@ -23,7 +23,7 @@ body {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;   
+  z-index: -1;
 }
 
 
@@ -84,24 +84,13 @@ h3 {
 
 }
 
-<<<<<<< HEAD
-
-/*let me know if you guys want to change the on hover image, i thought it was cute*/
-
-.row {
-	margin-top: 30px;
-=======
 .row {
 	/*margin: 30px 0px;*/
->>>>>>> a377c74ed5c0d1367c9a2cf0ba31628139da4864
 }
 
 .container {
 	text-align: center;
-<<<<<<< HEAD
-=======
 	display: none;
->>>>>>> a377c74ed5c0d1367c9a2cf0ba31628139da4864
 }
 
 #seats {
@@ -150,23 +139,6 @@ h3 {
 }
 
 .reserved {
-<<<<<<< HEAD
-color: red;
-}
-
-.glyphicon {
-font-size: 45px;
-position:relative;
-}
-
-.available:hover {
-	transform:scale(1.1);
-	cursor: crosshair;
-}
-
-.form-control {
-
-=======
 	color: red;
 }
 
@@ -177,7 +149,6 @@ position:relative;
 .glyphicon:hover {
 	transform: scale(1.10);
 	cursor: crosshair;
->>>>>>> a377c74ed5c0d1367c9a2cf0ba31628139da4864
 }
 
 #start-form {
@@ -215,5 +186,3 @@ position:relative;
 	display: block;
 	margin:0px auto;
 }
-
-
