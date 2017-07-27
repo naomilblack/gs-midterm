@@ -1,20 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
-@import url('https://fonts.googleapis.com/css?family=Bellefair');
-
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Sans|Cormorant');
 
 html, body {
 	height: 100%;
 }
 
 body {
-	font-family: 'Great Vibes', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 	background: url(Images/curtain.png) no-repeat, center, center, fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+  opacity: 0.7;
 }
+
+.content::after {
+  content: "";
+  background: url(Images/curtain.png);
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
 
 h1 {
 	text-align: center;
@@ -36,21 +47,20 @@ h3 {
   list-style: none;
   background-color: #B11407;
   text-align: center;
-  height: 50px;
+  height: 60px;
   padding: 0;
   margin: 0;
+  border-radius: 5px;
 }
 .nav li {
   font-family: 'Bellefair', serif;
   font-size: 1.2em;
   line-height: 44px;
   height: 50px;
-  font-family: 'Space Mono', monospace;
-  font-size: 2.1em;
-  line-height: 60px;
-  height: 65px;
+  height: 60px;
   width: 33%;
   overflow: auto;
+  border-radius: 5px;
 }
 
 .nav a {
@@ -154,6 +164,7 @@ h3 {
 	position: relative;
 	background-color: black;
 	width: 50%;
+	font-family: 'Great Vibes', cursive;
 	display: block;
 	margin:0px auto;
 	padding: 10px;
@@ -175,3 +186,5 @@ h3 {
 	display: block;
 	margin:0px auto;
 }
+
+
