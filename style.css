@@ -1,6 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+/*@import url('https://fonts.googleapis.com/css?family=Great+Vibes');*/
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+html, body {
+	height: 100%;
+}
 
 body {
 	font-family: 'Great Vibes', cursive;
@@ -46,6 +50,8 @@ body {
 #seats {
 	width: 70%;
 	border:1px solid black;
+	margin:0px auto;
+	position: relative;
 }
 
 #screen {
@@ -90,18 +96,33 @@ background-color: red;
 
 }
 
-.form-control
+.form-control {
 
+}
+
+#start-form {
+	display: block;
+	margin:5px auto;
+}
+
+#form-row {
+	display: none;
+}
 
 #final-form {
 	background-color: white;
 	width: 50%;
+	display: block;
 	margin:0px auto;
+	padding: 10px;
 }
 
-#final-form input {
-
-	margin:5px;
+#final-form label {
+	margin:5px auto;
 	width: 60%;
 }
 
+#final-button {
+	display: block;
+	margin:0px auto;
+}
