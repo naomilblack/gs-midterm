@@ -62,7 +62,7 @@ body {
 	display:flex;
 	flex-flow:row wrap;
 	justify-content: space-around;
-	background-color: black;
+	/*background-color: black;*/
 	margin:10px;
 
 }
