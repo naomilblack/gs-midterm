@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+body {
+	font-family: 'Great Vibes', cursive;
+	background: url(Images/curtain.png) no-repeat, center, center, fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #B11407;
+  text-align: center;
+  height: 66px;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Space Mono', monospace;
+  font-size: 2.1em;
+  line-height: 60px;
+  height: 65px;
+  width: 33%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+ }
+
+.nav li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.container{
+	text-align: center;
+}
+
+#seats {
+	width: 70%;
+	border:1px solid black;
+}
+
+#screen {
+	width:500px;
+	height:20px;
+	color:white;
+	background-color: black;
+	text-align: center;
+	margin:0px auto;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+.seat-container {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-around;
+	/*background-color: black;*/
+	margin:10px;
+
+}
+
+.seat {
+	width: 14.7%;
+	height:50px;
+	/*background-color: gray;*/
+	margin: 20px auto;
+
+}
+
+.available, glyphicon {
+	color: snow;
+}
+
+.selected, glyphicon {
+	color: orange;
+}
+
+.reserved, glyphicon {
+color: red;
+}
+
+.glyphicon {
+font-size: 45px;
+}
+
+.glyphicon:hover {
+	font-size: 60px;
+	cursor: crosshair;
+
+}  
