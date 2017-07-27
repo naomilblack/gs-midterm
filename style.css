@@ -1,6 +1,14 @@
-
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+<<<<<<< HEAD
+/*@import url('https://fonts.googleapis.com/css?family=Great+Vibes');*/
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+=======
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+>>>>>>> acdb3d3379e572dd3c23ee6b534ffdc6248b8673
+
+html, body {
+	height: 100%;
+}
 
 body {
 	font-family: 'Great Vibes', cursive;
@@ -11,20 +19,43 @@ body {
     -o-background-size: cover;
 }
 
+h1 {
+	text-align: center;
+	font-size: 3.1em;
+	color: black;
+}
+
+h2 {
+	color: white;
+}
+
+/*not sure if you want to center the form or not so i left its header alone*/
+
+h3 {
+	text-align: center;
+	font-size: 2.2em;
+	color: white;
+}
+
 .nav ul {
   list-style: none;
   background-color: #B11407;
   text-align: center;
-  height: 66px;
+  height: 50px;
   padding: 0;
   margin: 0;
 }
 .nav li {
+  font-family: 'Bellefair', serif;
+  font-size: 1.2em;
+  line-height: 44px;
+  height: 50px;
   font-family: 'Space Mono', monospace;
   font-size: 2.1em;
   line-height: 60px;
   height: 65px;
   width: 33%;
+  overflow: auto;
 }
 
 .nav a {
@@ -38,17 +69,36 @@ body {
     margin-right: -4px;
 }
 
-.container{
-	text-align: center;
+.nav a:hover {
+	background:url(Images/popcorn.jpg);
+	color: black;
 }
+
+.header{
+	background: url(Images/finalmarqueelarge.jpg) stretch;
+
+}
+
+
+/*let me know if you guys want to change the on hover image, i thought it was cute*/
+
+/*.row {
+	margin-top: 30px;
+	justify-content: center;
+
+.container {
+	text-align: center;
+}*/
 
 #seats {
 	width: 70%;
 	border:1px solid black;
+	margin:0px auto;
+	position: relative;
 }
 
 #screen {
-	width:500px;
+	width:auto;
 	height:20px;
 	color:white;
 	background-color: black;
@@ -56,15 +106,18 @@ body {
 	margin:0px auto;
 	font-size: 1.2em;
 	margin-top: 10px;
+	overflow: auto;
 }
 
 .seat-container {
 	display:flex;
 	flex-flow:row wrap;
 	justify-content: space-around;
-	/*background-color: black;*/
+	text-align: center;
+	font-size: 1em;
+	margin: auto;
+	background-color: black;
 	margin:10px;
-
 }
 
 .seat {
@@ -95,4 +148,35 @@ font-size: 45px;
 	font-size: 60px;
 	cursor: crosshair;
 
+}
+
+.form-control {
+
+}
+
+#start-form {
+	display: block;
+	margin:5px auto;
+}
+
+#form-row {
+	display: none;
+}
+
+#final-form {
+	background-color: white;
+	width: 50%;
+	display: block;
+	margin:0px auto;
+	padding: 10px;
+}
+
+#final-form label {
+	margin:5px auto;
+	width: 60%;
+}
+
+#final-button {
+	display: block;
+	margin:0px auto;
 }
